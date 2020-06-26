@@ -1,13 +1,5 @@
-# Vagrantfile
+# NOTAS
+Realiza la instalación del Appliance Graylog (Graylog + ElasticSearch + MongoDB)
 
-BOX: bento/centos7
-
-* Posee 2 Interfaces de red:
-** IP Bridge: DHCP (IP en red local)
-** IP Nat: DHCP + Vagrant (acceso ssh)
-
-CPUs: 2
-Mem: 2
-
-User: admin
-Pass: Graylog
+Tras la ejecución y finalización del Vagrantfile aparecerá la ruta así como usuario y contraseña, y estado de ElasticSearch.
+Se debe dejar aproximadamente 2 minutos para el arranque del servicio y acceder vía web.
