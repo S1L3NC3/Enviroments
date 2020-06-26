@@ -14,7 +14,10 @@ sudo yum install wget net-tools java-1.8.0-openjdk.x86_64 -y
 sudo mkdir /home/vagrant/installer
 cd /home/vagrant/installer
 sudo wget https://download.sonatype.com/nexus/professional-bundle/nexus-professional-2.14.8-01-bundle.tar.gz --no-check-certificate
-sudo group add nexus
-sudo groupadd nexus
-sudo useradd nexus -d /home/nexus -g nexus
-sudo tar -zxvf nexus-professional-2.14.8-01-bundle.tar.gz
+sudo tar -xvf * -C /opt
+sudo useradd nexus
+sudo chown -R nexus:nexus /opt/nexus-proffesional-2.14.8-01/
+sudo sed -i 's/#RUN_AS_USER=/RUN_AS_USER=nexus/g' /opt/nexus-professional-2.14.8-01/bin/nexus
+sudo ln -s /opt/nexus-professional-2.14.8-01/bin/nexus /etc/init.d/nexus
+sudo systemctl enable nexus
+sudo systemctl start nexus
