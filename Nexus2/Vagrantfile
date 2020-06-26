@@ -1,0 +1,15 @@
+Vagrant.configure("2") do |config|
+  config.vm.define "nexus" do |nexus|
+    nexus.vm.box = "bento/centos-7"
+    nexus.vm.hostname = "nexus.jddr.lan"
+    
+    nexus.vm.network "public_network"
+    nexus.vm.provider "virtualbox" do |v|
+      v.memory = 4096
+      v.cpus = 4
+      v.name = "VagrantGraylog"
+    end
+#    checkmk.vm.provision "shell", inline: $aprovisionamiento
+    nexus.vm.provision "shell", path: "installNexus2.sh"
+  end
+end
