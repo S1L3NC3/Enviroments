@@ -9,8 +9,10 @@ El desarrollo de estos códigos de **sh** y **Vagrantfile** son realizados desde
 Por lo tanto:
 ``
 VirtualBox 6.x
-
+``
+``
 Vagrant 2.2.9 o superior
-
+``
+``
 Linux, Windows o Mac
 ``
