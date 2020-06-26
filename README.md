@@ -24,3 +24,13 @@ Linux, Windows o Mac
 git
 ``
 
+## Vagrant BOX Support Matrix
+_Los Vagrant, junto con los scripts, han sido comprobados en los siguientes box de Vagrant alojados en **Vagrant Cloud** de **Hashicorp** :_
+
+``
+jddiez/anscent7
+``
+
+``
+centos/7
+``
