@@ -24,3 +24,5 @@ Linux, Windows o Mac
 git
 ``
 
+## Vagrant BOX Support Matrix
+_Los Vagrant, junto con los scripts, han sido comprobados en los siguientes boxs de Vagrant alojados en **Vagrant Cloud** de **Hashicorp**_
